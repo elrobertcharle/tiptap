@@ -23,7 +23,7 @@ const MenuBar = () => {
     return null;
   }
 
-  const createDocumentHandler = async () => {
+  const handleCreateDocument = async () => {
     const doc = JSON.stringify(editor.getJSON());
     const response = await fetch(`${backendBaseUrl}/document`, {
       method: "POST",
@@ -209,7 +209,7 @@ const MenuBar = () => {
           Purple
         </button>
         <div>
-          <button onClick={createDocumentHandler}>Create Document</button>
+          <button onClick={handleCreateDocument}>Create Document</button>
           <input
             style={{ marginLeft: "10px" }}
             name="inputDocumentId"
