@@ -214,6 +214,7 @@ const MenuBar = () => {
             style={{ marginLeft: "10px" }}
             name="inputDocumentId"
             type="number"
+            placeholder="document id"
             value={existingDocumentId}
             onChange={(e) => {
               setExistingDocumentId(e.target.value);
